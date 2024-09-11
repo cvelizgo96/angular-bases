@@ -9,6 +9,7 @@ import { CounterComponet } from './counter/counter.component';
   declarations: [
     AppComponent,
     CounterComponet
+
   ],
   imports: [
     BrowserModule,
