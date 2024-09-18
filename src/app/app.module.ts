@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
-import { CounterModule } from './counter/components/counter.module';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { CounterModule } from './components/counter/counter.module';
+import { DbzModule } from './dbz/dbz.module';
+import { HeroesModule } from './heroes/heroes.module';
 
 import { AppComponent } from './app.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { HeroesModule } from './heroes/heroes.module';
+
+
 
 
 
@@ -16,6 +20,7 @@ import { HeroesModule } from './heroes/heroes.module';
     BrowserModule,
     CounterModule,
     HeroesModule,
+    DbzModule,
 
   ],
   providers: [],
