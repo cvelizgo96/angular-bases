@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Character } from '../interfaces/character.interface';
 import { v4 as uuid } from 'uuid';
+import { AddCharacterComponent } from '../components/add-character/add-character.component';
 
 @Injectable({
   providedIn: 'root'
@@ -22,7 +23,7 @@ export class DbzService {
     power: 9584
   }];
 
-  onNewCharacter(character: Character):void{
+  addCharacter(character: Character):void{
     const newCharacter: Character = { ...character, id: uuid()}
     this.characters.push(newCharacter);
   }
