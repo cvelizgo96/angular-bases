@@ -22,4 +22,8 @@ export class MainPageComponent{
   onNewCharacter(character: Character):void{
     this.dbzService.addCharacter(character);
   }
+
+  onFilterCharacter(hero:string):void{
+    this.dbzService.filterListHeores(hero);
+  }
 }
